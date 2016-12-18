@@ -1,0 +1,12 @@
+<{include 'Public/header.html'}>
+	<!-- list -->
+		<h3><a href="?a=view&amp;id=<{$vo.id}>"><{$vo.title}></a></h3>
+		<div class="write">
+			<p><{$vo.content}></p>
+			<p>日期：<{$vo.ctime}></p>
+			<{if $isLogin == 1}><p><a href="?a=edit&amp;id=<{$vo.id}>">修改</a> | <a href="?a=a_del&amp;id=<{$vo.id}>">删除</a></p><{/if}>
+			</div>
+		<ul class="page_navi"><li><a href="index.php" title="返回首页">返回首页</a></li></ul>
+		<div class="line"><hr /></div>
+	<!-- /list -->
+<{include 'Public/footer.html'}>

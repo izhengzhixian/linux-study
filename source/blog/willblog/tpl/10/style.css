@@ -1,0 +1,431 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	scrollbar-track-color: #FFF5EB;
+	scrollbar-face-color: #FFF;
+	scrollbar-shadow-color: #FFF;
+	scrollbar-darkshadow-color: #F1E1D2;
+	scrollbar-highlight-color: #FFF;
+	scrollbar-3dlight-color: #F1E1D2;
+	scrollbar-arrow-color: #F0AFA7;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	line-height: 1.6;
+	color: #966C5C;
+	font-size: 83.3%;
+	font-family: Arial, Georgia, Sans-Serif;
+	background: #FFF5EB url(dot002_6.gif) repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #F0AFA7;
+}
+
+a:visited {
+	color: #F0AFA7;
+}
+
+a:hover {
+	color: #ECDAD3;
+}
+
+a:active {
+	color: #ECDAD3;
+}
+
+div.write a:hover {
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 {
+	color: #F2B3B1;
+	font-size: 150%;
+}
+	h1 a:link {color: #F2B3B1;}
+	h1 a:visited {color: #F2B3B1;}
+	h1 a:hover {color: #ECDAD3;}
+
+h2 {
+	color: #D0B9AF;
+	font-size: 77%;
+}
+
+h3 {
+	padding: 2px 0 0 15px;
+	height: 22px;
+	color: #A78071;
+	font-size: 100%;
+	background: #FFF url(nf049_h.gif) center left no-repeat;
+}
+
+h4, h5, h6 {
+	font-size: 100%;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+br {
+	letter-spacing: normal;
+}
+
+em {
+	color: #C55742;
+	font-style: normal;
+	background: #FFF5EB;
+}
+
+strong {
+	font-weight: bold;
+}
+
+big {
+	font-size: 131%;
+}
+
+small {
+	font-size: 77%;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: oblique;
+}
+
+address, cite {
+	font-style: normal;
+}
+
+code {
+	font-family: monospace;
+}
+
+table {
+	margin: 0 0 1em 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,td {
+	padding: 2px 5px;
+	border: 1px solid #F1E1D2;
+}
+
+hr {
+	display: none;
+}
+	.line {
+		margin-top: 30px;
+	}
+
+	.clears {
+		clear: both;
+		padding: 0 0 1em 0;
+	}
+
+img {
+	border: 0;
+}
+
+	.img_right {
+		float: right;
+		margin: 0 0 0 10px;
+		padding: 5px;
+		border: 1px solid #F1E1D2;
+		background: #FFF;
+	}
+
+	.img_left {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 5px;
+		border: 1px solid #F1E1D2;
+		background: #FFF;
+	}
+
+blockquote {
+	clear: both;
+	margin: 0 0 1em 30px;
+	padding: 5px 10px;
+	border: 1px solid #F1E1D2;
+	background: #FFF5EB;
+}
+
+input, select, textarea {
+	margin: 2px 0;
+	width: 50%;
+	border: 1px solid #F1E1D2;
+	color: #966C5C;
+	font-size: 100%;
+	font-family: Arial, Georgia, Sans-Serif;
+	background: #FFF5EB;
+}
+
+textarea {
+	width: 90%;
+}
+
+input.button {
+	width: 90px;
+	vertical-align: middle;
+}
+
+div#out {
+	margin: 0 auto 0 auto;
+	width: 750px;
+	background: #FFF;
+}
+
+div#header {
+	padding: 25px 20px 0 20px;
+	height: 100px;
+	text-align: right;
+	background: url(flower206.jpg) no-repeat left top;
+}
+
+div#main_column {
+	float: right;
+	width: 520px;
+}
+
+div#sidebar {
+	float: left;
+	padding-left: 10px;
+	width: 205px;
+	overflow: hidden;
+}
+
+div.write {
+	margin: 15px 15px 0 20px;
+	word-break:break-all; 
+	overflow:auto;
+}
+
+div.write ul, div.write ol {
+	margin: 0 0 1em 10px;
+}
+
+div.write ul li {
+	list-style: disc inside;
+}
+
+div.write ol li {
+	list-style: decimal;
+	margin: 0 0 0 20px;
+}
+
+div.write ul.parallel {
+	margin: 0;
+}
+
+ul.parallel li {
+	display: inline;
+	list-style: none;
+}
+
+ul.parallel li img {
+	margin:0 2px 3px 0;
+}
+
+dl {
+	margin: 0 0 1em 0;
+}
+
+dt {	}
+
+dd {
+	margin: 0 0 5px 15px;
+}
+
+dl.parallel dt {
+	width: 120px;
+	line-height: 1.6;
+}
+
+dl.parallel dd {
+	margin: -1.6em 0 5px 120px;
+	padding: 0 0 0 15px;
+}
+
+p.info {
+	margin: 0 0 1em 0;
+	padding: 2px 10px 0 0;
+	height: 80px;
+	overflow: auto;
+}
+
+.deco {
+	padding: 0 5px;
+	line-height: 22px;
+	background: url("line001.gif") left top;
+}
+
+img.deco {
+	padding: 5px;
+	border: 1px solid #F1E1D2;
+	background: #FFF;
+}
+
+.page_navi li {
+	list-style: none;
+	padding-right: 15px;
+	text-align: right;
+}
+
+.page_navi li a {
+	padding-left: 15px;
+	background: url("p_arrow011_001.gif") left center no-repeat;
+}
+
+div#menu {
+	margin-left: -10px;
+}
+
+div#menu ul {
+	margin-bottom: 10px;
+}
+
+div#menu li {
+	list-style: none;
+}
+
+div#menu li a {
+	display: block;
+	margin-bottom: 7px;
+	padding-left: 15px;
+	height: 22px;
+	color: #A78071;
+	background: #FFF url(nf049_h.gif) center right no-repeat;
+}
+
+div#menu li a:hover {
+	padding-left /**/: 20px;
+	background /**/: url("p_arrow011_001.gif") 5px center no-repeat;
+}
+
+div#footer {
+	clear: both;
+	text-align: center;
+}
+
+div#footer li {
+	display: inline;
+	list-style: none;
+	padding: 0 5px;
+}
+
+#copy, #copy a {
+	font-size: 11px;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+#entrance {
+	margin: 50px auto 0 auto;
+	padding: 10px 20px;
+	width: 710px;
+	background: #FFF;
+}
+
+.tool {
+	width: 90%;
+    margin: 0;
+}
+.tool a {
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 18px;
+	width: 18px;
+    border: 1px solid white;
+    text-indent: -10000px;
+    outline:none;/*ff*/
+    hide-focus:expression(this.hideFocus=true);/*ie*/
+}
+.tool a:hover {
+    border: 1px solid gray;
+}
+/*工具栏样式*/
+.tool_b {
+    background: url(tool.png) no-repeat 0 0;
+}
+.tool_i {
+    background: url(tool.png) no-repeat 0 -20px;
+}
+.tool_u {
+    background: url(tool.png) no-repeat 0 -40px;
+}
+.tool_link {
+    background: url(tool.png) no-repeat 0 -60px;
+}
+.tool_color {
+    background: url(tool.png) no-repeat 0 -80px;
+}
+.tool_red {
+    background: url(tool.png) no-repeat 0 -100px;
+}
+.tool_blue {
+    background: url(tool.png) no-repeat 0 -120px;
+}
+.tool_green {
+    background: url(tool.png) no-repeat 0 -140px;
+}
+.tool_left {
+    background: url(tool.png) no-repeat 0 -160px;
+}
+.tool_center {
+    background: url(tool.png) no-repeat 0 -180px;
+}
+.tool_right {
+    background: url(tool.png) no-repeat 0 -200px;
+}
+.tool_img {
+    background: url(tool.png) no-repeat 0 -220px;
+}
+.tool_quote {
+    background: url(tool.png) no-repeat 0 -240px;
+}
+.tool_font {
+    background: url(tool.png) no-repeat 0 -260px;
+}
+.tool_size {
+    background: url(tool.png) no-repeat 0 -280px;
+}
+.tool_tag {
+    background: url(tool.png) no-repeat 0 -300px;
+}
+.tool_flash {
+    background: url(tool.png) no-repeat 0 -320px;
+}

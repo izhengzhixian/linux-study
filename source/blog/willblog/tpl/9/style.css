@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	scrollbar-track-color: #FFF;
+	scrollbar-face-color: #FFF;
+	scrollbar-shadow-color: #FFF;
+	scrollbar-darkshadow-color: #DDD;
+	scrollbar-highlight-color: #FFF;
+	scrollbar-3dlight-color: #DDD;
+	scrollbar-arrow-color: #519389;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	line-height: 1.6;
+	color: #5B6230;
+	font-size: 83.3%;
+	font-family: Verdana, Georgia, Sans-Serif;
+	background: #FFF url(nf051_out.jpg) top center repeat-y;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #519389;
+}
+
+a:visited {
+	color: #519389;
+}
+
+a:hover {
+	color: #76AF69;
+	background: #E9F1E2;
+}
+
+a:active {
+	color: #76AF69;
+}
+
+h1, h2, h3 {
+	color: #8F9351;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 170%;
+	font-family: Georgia, "Times New Roman", Times, Sans-Serif;
+}
+	h1 a:link {color: #8F9351;}
+	h1 a:visited {color: #8F9351;}
+
+h2 {
+	font-size: 77%;
+}
+
+h3 {
+	height: 42px;
+	padding-left: 15px;
+	font-size: 110%;
+	font-family: Georgia, "Times New Roman", Times, Sans-Serif;
+	background: url(line033.gif) left bottom no-repeat;
+}
+	h3:first-letter {
+		color: #D0D56E;
+		font-size: 150%;
+	}
+
+
+h4, h5, h6 {
+	font-size: 100%;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+br {
+	letter-spacing: normal;
+}
+
+em {
+	color: #CE6B4C;
+	font-style: normal;
+}
+
+strong {
+	color: #5B6230;
+	font-weight: bold;
+}
+
+big {
+	font-size: 131%;
+}
+
+small {
+	font-size: 77%;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	color: #B0B591;
+	text-decoration: line-through;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: oblique;
+}
+
+address, cite {
+	font-style: normal;
+}
+
+code {
+	font-family: monospace;
+}
+
+table {
+	margin: 0 0 1em 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,td {
+	padding: 2px 5px;
+	border: 1px solid #DFDFDF;	
+}
+
+hr {
+	display: none;
+}
+	.line {
+		margin-top: 30px;
+	}
+
+	.clears {
+		clear: both;
+		padding: 0 0 1em 0;
+	}
+
+img {
+	border:0;
+}
+
+	.img_right {
+		float: right;
+		margin: 0 0 0 10px;
+		padding: 5px;
+		border: 1px solid #DFDFDF;
+		background: #FFF;
+	}
+
+	.img_left {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 5px;
+		border: 1px solid #DFDFDF;
+		background: #FFF;
+	}
+
+blockquote {
+	margin: 0 0 1em 30px;
+	padding: 5px 10px;
+	border-left: 4px solid #CED377;
+	background: #FFF;
+}
+
+input, select, textarea {
+	margin: 2px 0;
+	width: 40%;
+	border: 1px solid #DFDFDF;
+	color: #5B6230;
+	font-size: 100%;
+	font-family: Verdana, "MS PGothic", Sans-Serif;
+	background: #FFF;
+}
+
+textarea {
+	width: 70%;
+}
+
+input.button {
+	width: 90px;
+	vertical-align: middle;
+}
+
+div#out {
+	margin: 0 auto;
+	width: 760px;
+}
+
+div#header {
+	margin: 15px 0 10px 0;
+	padding: 50px 220px 0 0;
+	height: 105px;
+	text-align: center;
+	background: url(flower113.jpg) no-repeat top right;
+}
+
+div#main_column {
+	float: left;
+	padding-left: 10px;
+	width: 500px;
+}
+
+div#sidebar {
+	float: right;
+	padding: 20px 10px 0 0;
+	width: 240px;
+	overflow: hidden;
+}
+
+div.write {
+	padding: 10px 15px;
+}
+
+div.write ul, div.write ol {
+	margin: 0 0 1em 15px;
+}
+
+div.write ul li {
+	list-style: circle inside;
+}
+
+div.write ol li {
+	list-style: decimal;
+	margin: 0 0 0 20px;
+}
+
+div.write ul.parallel {
+	margin: 0;
+}
+
+ul.parallel li {
+	display: inline;
+	list-style: none;
+}
+
+ul.parallel li img {
+	margin:0 2px 3px 0;
+}
+
+dl {
+	margin: 0 0 1em 0;
+}
+
+dt {	}
+
+dd {
+	margin: 0 0 5px 15px;
+}
+
+dl.parallel dt {
+	width: 120px;
+	line-height: 1.6;
+}
+
+dl.parallel dd {
+	margin: -1.6em 0 5px 120px;
+	padding: 0 0 0 15px;
+}
+
+p.info {
+	margin: 0 0 1em 0;
+	padding: 2px 10px 0 0;
+	height: 80px;
+	overflow: auto;
+	border: 0;
+}
+
+.deco {
+	line-height: 22px;
+	background: url("line001.gif") left top;
+}
+
+img.deco {
+	padding: 5px;
+	border: 1px solid #DFDFDF;
+	background: #FFF;
+}
+
+.page_navi li {
+	list-style: none;
+	padding-right: 15px;
+	text-align: right;
+}
+
+div#menu {	}
+
+div#menu li {
+	list-style: none;
+	margin-bottom: 5px;
+	text-align: right;
+	background: url(line033.gif) left center no-repeat;
+}
+
+div#menu li a {
+	color: #8F9351;
+	font-size: 110%;
+	font-family: Georgia, "Times New Roman", Times, Sans-Serif;
+	background: #FFF;
+}
+
+div#footer {
+	clear: both;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: center;
+}
+
+div#footer li {
+	display: inline;
+	list-style: none;
+	padding: 0 3px;
+}
+
+#copy, #copy a {
+	font-size: 11px;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+#entrance {
+	margin: 50px auto 0 auto;
+	width: 60%;
+}

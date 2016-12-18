@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*UBB工具栏样式*/
+.tool {
+    width: 90%;
+    margin: 0;
+}
+.tool a {
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 18px;
+	width: 18px;
+    border: 1px solid white;
+    text-indent: -10000px;
+    outline:none;/*ff*/
+    hide-focus:expression(this.hideFocus=true);/*ie*/
+}
+.tool a:hover {
+    border: 1px solid gray;
+}
+/*UBB工具栏按钮样式*/
+.tool_b {
+    background: url(tool.png) no-repeat 0 0;
+}
+.tool_i {
+    background: url(tool.png) no-repeat 0 -20px;
+}
+.tool_u {
+    background: url(tool.png) no-repeat 0 -40px;
+}
+.tool_link {
+    background: url(tool.png) no-repeat 0 -60px;
+}
+.tool_color {
+    background: url(tool.png) no-repeat 0 -80px;
+}
+.tool_red {
+    background: url(tool.png) no-repeat 0 -100px;
+}
+.tool_blue {
+    background: url(tool.png) no-repeat 0 -120px;
+}
+.tool_green {
+    background: url(tool.png) no-repeat 0 -140px;
+}
+.tool_left {
+    background: url(tool.png) no-repeat 0 -160px;
+}
+.tool_center {
+    background: url(tool.png) no-repeat 0 -180px;
+}
+.tool_right {
+    background: url(tool.png) no-repeat 0 -200px;
+}
+.tool_img {
+    background: url(tool.png) no-repeat 0 -220px;
+}
+.tool_quote {
+    background: url(tool.png) no-repeat 0 -240px;
+}
+.tool_font {
+    background: url(tool.png) no-repeat 0 -260px;
+}
+.tool_size {
+    background: url(tool.png) no-repeat 0 -280px;
+}
+.tool_tag {
+    background: url(tool.png) no-repeat 0 -300px;
+}
+.tool_flash {
+    background: url(tool.png) no-repeat 0 -320px;
+}

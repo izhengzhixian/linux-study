@@ -1,0 +1,29 @@
+WillBlog_v1.2 UTF-8
+
+在conf.inc.php里面设置MySql配置
+
+初始账号/密码: admin/admin
+
+上传到网站空间
+
+设置tpl_c目录和文件tpl_c/site_conf.php为0777, 
+
+导入weibo.sql
+
+登录管理修改网站信息
+
+更新说明:
+2013-04-30 版本v1.2
+优化重写了各种类.
+留言本功能加强
+添加了一管皮肤10
+可从配置设置管理用户和密码
+修正了一些错误
+
+源码下载地址:
+
+WillBlog_v1.2: http://www.113344.com/down/weibo_v1.2.rar
+
+演示地址: http://blog.113344.com
+
+

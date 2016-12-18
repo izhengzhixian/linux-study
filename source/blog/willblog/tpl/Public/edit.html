@@ -1,0 +1,19 @@
+<{include 'Public/header.html'}>
+	<!-- list -->
+		<h3>更新文章</h3>
+		<div class="write">
+		<p>UBB新标签：[MP3]http://mp3链接地址[/MP3]</p>
+		<form action="?a=a_update&id=<{$vo.id}>" method="post" onSubmit="return chk_blog(this)">
+			<input name="id" type="hidden" id="id" value="<{$vo.id}>" />
+			标  题：<input name="title" id="title" type="text" size="20" value="<{$vo.title}>" /><br />
+			<div class="tool"><{include 'Public/ubbtool.html'}></div>
+			<textarea name="content" id="edit" rows="6" cols="40"><{$vo.content}></textarea>
+			<p><input type="submit" value="修改" class="button" />&nbsp;<input type="reset" value="重置" class="button" /></p>
+		</form>
+		</div>
+		<ul class="page_navi"><li><a href="index.php" title="返回首页">返回首页</a></li></ul>
+		<div class="line"><hr /></div>
+	<!-- /list -->
+<{include 'Public/footer.html'}>
+<script type="text/javascript" src="tpl/Public/ubb.js"></script>
+<script type="text/javascript" src="tpl/Public/check.js"></Script>

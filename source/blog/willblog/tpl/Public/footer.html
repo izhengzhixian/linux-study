@@ -1,0 +1,84 @@
+</div>
+<!-- /main_column -->
+ 
+<div id="sidebar">
+	<!-- menu -->
+	<div id="menu">
+		<ul>
+			<li><a href="index.php" title="Home">首页</a></li>
+			<li><a href="index.php?a=index">文章</a></li>
+			<li><a href="index.php?a=gbook">留言</a></li>
+			<li><a href="javascript:showLogin()">管理</a></li>
+		</ul>
+	</div>
+	<!-- /menu -->
+	<p>
+		<a href="http://www.113344.com" target="_blank"><img src="tpl/__CSS__/clap01.gif" alt="web" /></a>
+		<a href="http://www.113344.com" target="_blank"><img src="tpl/__CSS__/clap01r.gif" alt="web" /></a>		
+ 
+	</p>
+
+<{if $isLogin == 0}>
+<!-- login -->
+<div id="login" style="display:none;">
+	<!-- content -->
+	<h3>管理登录</h3>
+		<div class="write">
+			<form action="?a=a_login" method="post" name="frmlogin">
+			用户：<input type="text" name="admin_name" value="" /><br />
+			密码：<input type="password" name="admin_pwd" value="" />
+			<input type="submit" name="bsubmit" value="登录" class="button" />
+			</form>
+		</div>
+		<!-- /write -->
+		<div class="line"><hr /></div>
+</div>
+<!-- /login -->
+<{else}>
+<div id="login">
+	<!-- content -->
+	<h3>博客管理</h3>
+		<div class="write">
+			<p><a href="index.php?a=add">添加</a> | <a href="index.php?a=site">配置</a> | <a href="?a=a_logout">退出</a></p>
+		</div>
+		<!-- /write -->
+		<div class="line"><hr /></div>
+</div>
+<{/if}>
+
+	<!-- about -->
+	<h3>关于本站</h3>
+		<div class="write">
+			<p><{$conf.site_about}></p>
+		</div>
+		<!-- /write -->
+		<div class="line"><hr /></div>
+	<!-- /about -->
+	<!-- link -->
+	<h3>友情链接</h3>
+		<div class="write">
+		<p><a href="http://www.113344.com/" target="_blank" >113344.Com</a></p>
+		<ul>
+			<li><a href="#" target="_blank" >等待加入</a></li>
+		</ul>
+		</div><!-- /write -->
+		<div class="line"><hr /></div>
+	<!-- /link -->
+</div>
+<!-- /sidebar -->
+<!-- footer -->
+<div id="footer">
+		<ul>
+			<li><a href="#PAGETOP" title="返回顶部">Pagetop</a></li>
+			<li><a href="index.php" title="首页">Index</a></li>
+		</ul>
+		<div id="copy">
+			&copy;2013 <a href="<{$conf.links}>"><{$conf.copyright}></a> | <a href="http://www.113344.com/" target="_blank" title="Powered by 113344.com">Powered by WillBlog v1.2</a>			
+		</div>
+</div>
+<!-- /footer -->
+ 
+</div>
+<!--out-->
+</body>
+</html>

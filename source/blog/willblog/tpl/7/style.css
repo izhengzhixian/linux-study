@@ -1,0 +1,348 @@
+/*---- NF020 -----*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	scrollbar-track-color: #FFF;
+	scrollbar-face-color: #FFF;
+	scrollbar-shadow-color: #FFF;
+	scrollbar-darkshadow-color: #D6D4B5;
+	scrollbar-highlight-color: #FFF;
+	scrollbar-3dlight-color: #D6D4B5;
+	scrollbar-arrow-color: #D6D4B5;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	line-height: 1.5;
+	color: #686754;
+	font-size: 83.3%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(nor_kumo001.jpg) top left no-repeat fixed;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #969647;
+}
+
+a:visited {
+	color: #969647;
+}
+
+a:hover {
+	color: #EEE;
+}
+
+a:active {
+	color: #EEE;
+}
+
+h1, h2, h3 {
+	color: #A3A184;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 205%;
+	font-family: "Times New Roman", Times, serif;
+}
+	* html h1 {font-family: Arial, Helvetica, sans-serif;}
+	*:first-child+html h1 {font-family: Arial, Helvetica, sans-serif;}
+
+	h1 a:link {color: #A3A184;}
+	h1 a:visited {color: #A3A184;}
+	h1 a:hover {color: #333;}
+
+h2 {
+	font-size: 77%;
+}
+
+h3 {
+	border-bottom: 1px solid #D6D4B3;
+	font-size: 110%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h4, h5, h6 {
+	font-size: 100%;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+br {
+	letter-spacing: normal;
+}
+
+em {
+	color: #B14629;
+	font-style:normal;
+	text-decoration: underline;
+}
+
+strong {
+	font-weight: bold;
+}
+
+big {
+	font-size: 131%;
+}
+
+small {
+	font-size: 77%;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	color: #CCC;
+}
+
+b {
+	font-weight: bold;
+}
+
+i, cite {
+	font-style: oblique;
+}
+
+address {
+	font-style: normal;
+}
+
+code {
+	font-family: monospace;
+}
+
+table {
+	margin: 0 0 1em 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,td {
+	padding: 2px 5px;
+	border: 1px solid #D6D4B3;
+}
+
+hr {
+	display: none;
+}
+	.line {
+		margin-top: 30px;
+	}
+
+	.clears {
+		clear: both;
+		padding: 0 0 1em 0;
+	}
+
+img, img a {
+	border: 0;
+}
+
+	.img_right {
+		float: right;
+		margin: 0 0 0 10px;
+		padding: 5px;
+		border: 1px solid #D6D4B3;
+		background: #FFF;
+	}
+
+	.img_left {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 5px;
+		border: 1px solid #D6D4B3;
+		background: #FFF;
+	}
+
+blockquote {
+	margin: 0 0 1em 30px;
+	padding: 5px 10px;
+	border: 1px solid #D6D4B5;
+	background: #FFF url(dot001.gif) bottom left;
+}
+
+input, select, textarea {
+	margin: 2px 0;
+	width: 40%;
+	border: 1px solid #D6D4B5;
+	color: #686754;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #FFF url(dot001.gif) bottom left;
+}
+
+textarea {
+	width: 65%;
+}
+
+input.button {
+	width: 90px;
+	vertical-align: middle;
+}
+
+div#out {
+	float: left;
+	width: 100%;
+}
+
+div#header {
+	margin: 50px 0 20px 0;
+	text-align: center;
+}
+
+div#contents {
+	float: left;
+	width: 98%;
+}
+
+div#main_column {
+	margin: 0 0 0 280px;
+}
+
+div#sidebar {
+	float: left;
+	margin-left: -98%;
+	padding: 0 0 0 20px;
+	width: 230px;
+	overflow: hidden;
+}
+
+div.write {
+	margin: 15px 10px;
+}
+
+div.write ul, div.write ol {
+	margin: 0 0 1em 10px;
+}
+
+div.write ul li {
+	list-style: square inside;
+}
+
+div.write ol li {
+	list-style: decimal;
+	margin: 0 0 0 20px;
+}
+
+div.write ul.parallel {
+	margin: 0;
+}
+
+ul.parallel li {
+	display: inline;
+	list-style: none;
+}
+
+ul.parallel li img {
+	margin:0 2px 3px 0;
+}
+
+dl {
+	margin: 0 0 1em 0;
+}
+
+dt {	}
+
+dd {
+	margin: 0 0 5px 15px;
+}
+
+dl.parallel dt {
+	width: 120px;
+	line-height: 1.6;
+}
+
+dl.parallel dd {
+	margin: -1.6em 0 5px 120px;
+	padding: 0 0 0 15px;
+}
+
+p.info {
+	margin: 10px 0 1em 0;
+	padding: 2px 10px 0 10px;
+	height: 80px;
+	overflow: auto;
+	border: 1px solid #D6D4B5;
+	background: url(dot001.gif) bottom left;
+}
+
+.deco {
+	line-height: 22px;
+	background: url("line004.gif") left top;
+}
+
+img.deco {
+	padding: 5px;
+	border: 1px solid #D6D4B3;
+	background: #FFF;
+}
+
+.page_navi li {
+	list-style: none;
+	margin: 0 10px;
+	text-align: right;
+}
+
+div#menu {
+	margin: 20px 0 10px 0;
+	padding: 0 10px;
+}
+
+div#menu li {
+	list-style: none;
+	margin: 0 0 3px 0;
+	font-size: 120%;
+	font-family: "Times New Roman", Times, serif;
+}
+
+div#menu li a {
+	display: block;
+	width: 100%;
+	color: #A3A184;
+	background: url(dot001.gif) bottom left;
+}
+
+#menu li a:hover {
+	padding-left: 10px;
+}
+
+div#footer {
+	clear: both;
+	padding: 80px 0 0 0;
+	height: 350px;
+	text-align: center;
+	background: #FFF url(css_hana033.jpg) 20px 0 repeat-x;
+}
+
+div#footer li {
+	display: inline;
+	list-style: none;
+	margin: 0 10px;
+}
+
+#copy {
+	margin: 5px 0 0 0;
+	font-size: 11px;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+#entrance {
+	margin: 80px auto 0 auto;
+	width: 60%;
+}

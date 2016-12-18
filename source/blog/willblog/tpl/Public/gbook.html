@@ -1,0 +1,46 @@
+<{include 'Public/header.html'}>
+	<!-- list -->
+		<h3>添加留言</h3>
+		<div class="write">
+		
+		<form action="?a=g_insert" method="post">	
+		昵  称：<input name="username" id="username" type="text" size="20" value="游客" />&nbsp;&nbsp;头  像：随机<br />
+		<div class="tool"><{include 'Public/ubbtool.html'}></div>
+		<textarea name="content" id="edit" rows="3" cols="40"></textarea>
+		<p><input type="submit" value="添加" class="button" />&nbsp;<input type="reset" value="重置" class="button" /></p>
+		</form>
+
+		</div>		
+		<div class="line"><hr /></div>	
+		
+		<h3>留言列表(<{$count}>)</h3>
+
+		<{loop $list as $vo}>
+		<div class="write">
+			<img src="tpl/Public/face/m<{$vo.uface}>.gif" alt="" class="img_left" />
+			<p>[ <{$vo.username}> ]在 <{$vo.ctime}> 说：</p>
+			<p><{$vo.content}></p>	
+			<p><{if $isLogin == 1}><a href="?a=g_del&amp;id=<{$vo.id}>">删除</a> | <{/if}> IP: <{$vo.uip}></p>
+			<{if $vo['rtime'] != 0}><p><font color="green">回  复：<{$vo.re}> - <{$vo.rtime}></font></p><{/if}>
+		</div>
+		<{if $isLogin == 1}>
+		<div id="reform">
+			<form action="?a=g_replay&id=<{$vo.id}>" method="post">
+			回  复：<input name="re" id="re" type="text" size="20" value="<{$vo.re}>" />
+			<input type="submit" value="回复" class="button" />
+			</form>
+		</div>
+		<{/if}>
+		<div class="line"><hr /></div>
+		<{noloop $list}>
+		<div class="write">
+			<p>还没有任何留言!</p>	
+		</div>
+		<{/loop}>
+
+
+	<!-- /list -->
+	<{$page}>
+<{include 'Public/footer.html'}>
+<script type="text/javascript" src="tpl/Public/ubb.js"></script>
+<script type="text/javascript" src="tpl/Public/check.js"></Script>

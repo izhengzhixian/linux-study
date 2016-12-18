@@ -1,0 +1,24 @@
+<{include 'Public/header.html'}>
+	<!-- list -->
+		<h3>网站配置</h3>
+		<div class="write">
+		<p>在这里修改网站的配置信息!</p>
+		<form action="?a=site_update" method="post">
+			标　　题：<input name="site_title" type="text" value="<{$conf.site_title}>" /><br />
+			关 键 字：<input name="keywords" type="text" value="<{$conf.keywords}>" /><br />
+			描　　述：<input name="site_desc" type="text" value="<{$conf.site_desc}>" /><br />
+			皮　　肤：<input name="site_css" type="text" value="<{$conf.site_css}>" />tpl目录下0-10<br />
+			网 站 名：<input name="site_h1" type="text" value="<{$conf.site_h1}>" /><br />
+			口　　号：<input name="site_h2" type="text" value="<{$conf.site_h2}>" /><br />
+			版　　权：<input name="copyright" type="text" value="<{$conf.copyright}>" /><br />
+			链　　接：<input name="links" type="text" value="<{$conf.links}>" /><br />
+			关　　于：<input name="site_about" type="text" value="<{$conf.site_about}>" /><br />
+			用　　户：<input name="username" type="text" value="<{$conf.username}>" /><br />
+			密　　码：<input name="password" type="password" value="" /> 不修改请留空<br />
+			<p><input type="submit" value="修改" class="button" />&nbsp;<input type="reset" value="重置" class="button" /></p>
+		</form>
+		</div>
+		<ul class="page_navi"><li><a href="index.php" title="返回首页">返回首页</a></li></ul>
+		<div class="line"><hr /></div>
+	<!-- /list -->
+<{include 'Public/footer.html'}>

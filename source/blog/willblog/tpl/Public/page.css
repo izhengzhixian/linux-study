@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+	word-break:break-all; 
+	overflow:auto;
+}
+
+/****** Page *****/
+.pages {
+	height: 25px;
+	line-height: 25px;
+	margin: 5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.pages ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.pages li {
+	display:inline;
+	float: left;
+	border: 1px dashed #999;
+	padding:0px 5px;
+	height:25px;
+	line-height:25px;
+	margin-right: 0.3em;
+}
+.pages li span {
+	color:#666;
+}
+.pages li a {
+	padding:0px 2px;
+	display: block;
+}
+.pages li a:hover {}
+
+.pages input {
+	width:25px;
+	height:19px;
+	font-size:11px;
+	padding:0px 3px;
+	margin:0px 3px;
+	text-align:center;
+	line-height:15px;
+}
+.pages span.current {
+	padding:0px 2px;
+	color: #333;
+	font-weight:bold;
+}
+
+/****** Base *****/
+ul.ul-list li{
+	height: 25px;
+	line-height: 25px;
+	margin: 5px;
+	border-bottom: 1px dashed #999;
+}
+ul.ul-list li span{
+	float: right;
+}

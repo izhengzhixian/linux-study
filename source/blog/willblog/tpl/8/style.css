@@ -1,0 +1,356 @@
+/*---- NF029 -----*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	scrollbar-track-color: #000;
+	scrollbar-face-color: #222;
+	scrollbar-shadow-color: #222;
+	scrollbar-darkshadow-color: #000;
+	scrollbar-highlight-color: #222;
+	scrollbar-3dlight-color: #222;
+	scrollbar-arrow-color: #70546E;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	line-height: 1.5;
+	color: #8D8D8D;
+	font-size: 83.3%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #000 url("nor_hana056.jpg") top right no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #817F64;
+}
+
+a:visited {
+	color: #444;
+}
+
+a:hover {
+	color: #3E293D;
+}
+
+a:active {
+	color: #3E293D;
+}
+
+h1 {
+	color: #999;
+	font-size: 205%;
+	font-family: "Times New Roman", Times, serif;
+}
+	* html h1 {font-family: Arial, Helvetica, sans-serif;}
+	*:first-child+html h1 {font-family: Arial, Helvetica, sans-serif;}
+
+	h1 a:link {color: #999;}
+	h1 a:visited {color: #999;}
+	h1 a:hover {color: #333;}
+
+h2 {
+	color: #999;
+	font-size: 77%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	margin: 30px 0 10px 0;
+	padding-left: 5px;
+	line-height: 1.0;
+	border-left: 5px solid #3E293D;
+	color: #70546E;
+	font-size: 131%;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h4, h5, h6 {
+	font-size: 100%;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+br {
+	letter-spacing: normal;
+}
+
+em {
+	color: #800000;
+	font-style: normal;
+}
+
+strong {
+	font-weight: bold;
+}
+
+big {
+	font-size: 131%;
+}
+
+small {
+	font-size: 77%;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	color: #333;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: oblique;
+}
+
+address, cite {
+	font-style: normal;
+}
+
+code {
+	font-family: monospace;
+}
+
+table {
+	margin: 0 0 1em 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,td {
+	padding: 2px 5px;
+	border: 1px solid #333;
+}
+
+hr {
+	display: none;
+}
+	.line {
+		margin-top: 30px;
+	}
+
+	.clears {
+		clear: both;
+		padding: 0 0 1em 0;
+	}
+
+img, img a {
+	border: 0;
+}
+
+	.img_right {
+		float: right;
+		margin: 0 0 0 10px;
+		padding: 5px;
+		border: 1px solid #333;
+		background: #000;
+	}
+
+	.img_left {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 5px;
+		border: 1px solid #333;
+		background: #000;
+	}
+
+blockquote {
+	margin: 0 0 1em 30px;
+	padding: 5px 10px;
+	border: 1px solid #333;
+	background: #000;
+}
+
+input, select, textarea {
+	margin: 2px 0;
+	width: 50%;
+	border: 1px solid #333;
+	color: #8D8D8D;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #000;
+}
+
+textarea {
+	width: 90%;
+}
+
+input.button {
+	width: 90px;
+	vertical-align: middle;
+}
+
+div#out {
+	margin: 0 0 0 auto;
+	width: 990px;
+	background: url(css_hana046.jpg) top left repeat-y;
+}
+
+div#header {
+	padding: 60px 90px 0 0;
+	text-align: right;
+}
+
+div#main_column {
+	float: left;
+	display: inline;
+	padding-left: 80px;
+	width: 600px;
+}
+
+div#sidebar {
+	float: right;
+	display: inline;
+	margin: 30px 84px 0 0;
+	width: 220px;
+	overflow: hidden;
+	text-align: right;
+}
+
+div.write {
+	margin: 15px 10px;
+}
+
+div.write ul, div.write ol {
+	margin: 0 0 1em 10px;
+}
+
+div.write ul li {
+	list-style: disc inside;
+}
+
+div.write ol li {
+	list-style: decimal;
+	margin: 0 0 0 20px;
+}
+
+div.write ul.parallel {
+	margin: 0;
+}
+
+ul.parallel li {
+	display: inline;
+	list-style: none;
+}
+
+ul.parallel li img {
+	margin:0 2px 3px 0;
+}
+
+dl {
+	margin: 0 0 1em 0;
+}
+
+dt {	}
+
+dd {
+	margin: 0 0 5px 15px;
+}
+
+dl.parallel dt {
+	width: 120px;
+	line-height: 1.6;
+}
+
+dl.parallel dd {
+	margin: -1.6em 0 5px 120px;
+	padding: 0 0 0 15px;
+}
+
+p.info {
+	margin: 10px 0 1em 0;
+	padding: 2px 10px 0 0;
+	height: 80px;
+	overflow: auto;
+	border: 0;
+}
+
+.deco {
+	line-height: 22px;
+	padding: 0 5px;
+	background: url("line006.gif") left top;
+}
+
+img.deco {
+	padding: 5px;
+	border: 1px solid #333;
+	background: #000;
+}
+
+.page_navi li {
+	list-style: none;
+	margin: 0 10px;
+	text-align: right;
+}
+
+.page_navi li a:link, .page_navi li a:visited {
+	color: #444;
+}
+
+div#menu {	}
+
+div#menu li {
+	list-style: none;
+	margin-bottom: 10px;
+	background: url(nf029_menu_bg.png);
+}
+	* html #menu li {
+		width: 100%;
+		background: url(nf029_menu_bg.gif);
+		filter: alpha(opacity="50");
+	}
+
+div#menu li a {
+	display: block;
+	width: 100%;
+	color: #888;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#menu li a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+div#footer {
+	clear: both;
+	padding: 10px 90px 0 0;
+	text-align: right;
+}
+
+div#footer li {
+	display: inline;
+	list-style: none;
+	padding: 0 0 0 10px;
+}
+
+#copy, #copy a {
+	font-size: 11px;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+#entrance {
+	margin: 80px auto 0 auto;
+	width: 60%;
+}
+
+#entrance h1 {
+	text-align: center;
+}
